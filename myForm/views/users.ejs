@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>users page</title>
+</head>
+
+<body>
+  <h2><%= (query || "") + " " + title %></h2>
+  <form name="form" method="post">
+    <input name="userInput" type="text"></input>
+    <br/>
+    <button name="button" type="submit">Submit</button>
+  </form>
+
+  <p name="para"><%= lowercased %></p>
+
+</body>
+
+</html>
