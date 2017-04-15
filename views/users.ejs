@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+</head>
+
+<body>
+    <h1><%= title %></h1>
+    <h2><%= say %></h2>
+    <form class="col s12"  action="/users/say" method="GET">
+        <div class="row">
+            <div class="input-field col s6">
+                <input placeholder="Kata" name="kata" type="text">
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit">Submit
+        </button>
+    </form>
+</body>
+
+</html>

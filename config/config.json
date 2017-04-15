@@ -1,0 +1,10 @@
+{
+  "development": {
+    "username": "wisnu",
+    "password": "wisnu",
+    "database": "wisnu",
+    "dialect": "postgres",
+    "port":5432,
+    "logging":false
+  }
+}
