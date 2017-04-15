@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%=  %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h3><%= `Hello my name is ${firstname} ${lastname}` %></h3>
+
+    <form action="/users/create" method="get">
+        First name:<br>
+        <input type="text" name="firstname">
+        <br> Last name:<br>
+        <input type="text" name="lastname">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
