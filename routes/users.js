@@ -26,5 +26,16 @@ router.get('/', function(req, res, next) {
 
 });
 
+
+
+router.post('/', function(req, res){
+	console.log(req.body)
+	
+  var userText = req.body.userText;
+  var html = 'toLowerCase: "' + userText.toLowerCase() + '".<br>' ;
+  res.send(html);
+});
+
+
 module.exports = router;
 
