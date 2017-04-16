@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <div class="container">
+      <form action="/" method="GET">
+        <div>
+          <div>
+            <input id="first_name" type="text" name="first_name">
+                <label for="first_name">First Name</label>
+          </div>
+          <div>
+              <input id="last_name" type="text" name="last_name">
+              <label for="last_name">Last Name</label>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="row">
+      <table>
+          <thead>
+            <tr>
+                <th>No</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- handling data dari router -->
+            <!-- bila ada data -->
+            <!-- iterasi setiap data dari array users -->
+            <%
+            if (users.length < 1) {
+            %>
+            <tr>
+              <td colspan="3"><p class="flow-text">Tidak ada data</p></td>
+            </tr>
+            <%
+            } else {
+              let no = 1;
+              users.forEach(u => {
+            %>
+            <tr>
+              <!-- tampilkan setiap atribut dari instance User -->
+              <td><%- no %></td>
+              <td><%- u.first_name %></td>
+              <td><%- u.last_name %></td>
+            </tr>
+            <%
+                no++;
+              });
+            }
+            %>
+            <!-- batas forEach -->
+          </tbody>
+        </table>
+    </div>
+  </body>
+</html>
