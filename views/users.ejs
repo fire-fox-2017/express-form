@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form action="/users" method="POST">
+      <input type="text" name="users">
+      <button type="submit">Click</button>
+    </form>
+    <p><%= (typeof result == 'undefined' ? null : result) %></p>
+    <p><%= (typeof query == 'undefined' ? null : query) %></p>
+  </body>
+</html>
