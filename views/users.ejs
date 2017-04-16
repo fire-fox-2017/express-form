@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Halaman User
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1><%= title %></h1>
+
+    <form action="/users/proses" method="POST">
+        Masukkan huruf KAPITAL:<br>
+        <input type="text" name="say"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+  <h2><%= say %> </h2>
+
+</body>
+
+</html>
