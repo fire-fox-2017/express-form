@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello</title>
+  </head>
+<body>
+  <fieldset>
+    <form id="tes" action="/users" method="get">
+      First Name : <input name="first_name" type="text" id="first_name"> <br>
+      Last Name : <input name="last_name" type="text" id="last_name"> <br>
+      <button type="submit">Submit</button>
+    </form>
+  </fieldset>
+    <h3><%= `Hello my name is ${first_name} ${last_name}` %></h3>
+</body>
+</html>
