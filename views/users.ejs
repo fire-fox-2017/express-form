@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1> Input Text </h1>
+    <div class='row'>
+      <form method = "POST" action="/users/input">
+        <input name="name" type="text" placeholder="Input text here">
+        <button type="submit"> submit </button>
+      </form>
+    </div>
+    <div class='row'>
+      <p><%= out %></p>
+    </div>
+  </body>
+</html>
